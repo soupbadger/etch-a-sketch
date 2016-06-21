@@ -43,7 +43,7 @@ $(document).ready(function() {
   
   $("#clear:button").click(function(){
     do {
-      var newSize = prompt("Enter new pad size: ");
+      var newSize = prompt("Enter new pad size in NUMBERS: ");
       sketch(newSize);
     } while (isNaN(newSize));
   });
@@ -51,7 +51,7 @@ $(document).ready(function() {
   $("#default:button").click(function() {
     mode = "default";
     do {
-      var newSize = prompt("Enter new pad size: ");
+      var newSize = prompt("Enter new pad size in NUMBERS: ");
       sketch(newSize);
     } while (isNaN(newSize));
   });
@@ -59,10 +59,10 @@ $(document).ready(function() {
   $("#RNG:button").click(function() {
 		mode = "RNG";
 		do {
-			var newPadSize = prompt("Please enter a new size.");
-			newPad(newPadSize);
+			var newSize = prompt("Enter new pad size in NUMBERS:");
+			sketch(newSize);
 		}
-		while (isNaN(newPadSize));
+		while (isNaN(newSize));
 	});
   
   function getColor() {
@@ -75,4 +75,4 @@ $(document).ready(function() {
 	};
   
   
-})
+});
