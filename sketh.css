@@ -1,0 +1,32 @@
+h1 {
+  color: teal;
+  margin: auto;
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  margin: 10px;
+}
+
+button {
+  border: none;
+  padding: 15px 27px;
+  background-color: #00967D;
+  color: white;
+}
+
+#sketchpad {
+	position: relative;
+  margin: 0 auto;
+	display: block;
+	background-color: lightgrey;
+	height: 700px;
+	width: 700px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.square {
+  float: left;
+}
